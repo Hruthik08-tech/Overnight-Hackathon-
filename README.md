@@ -4,17 +4,19 @@ An AI-powered website to automate the task labelling process
 This project is a simple, lightweight system for uploading multiple PDF files through choose file option. The frontend is created using HTML, CSS and javascript for basic interactivity, and the backend uses Flask to handle file uploads and routing and rendering templates. 
 
 /HACKATHON
-│
-├── app.py                # Flask backend
-├── templates/
-│     └── landing.html    # Main UI page
-├── static/
-|     js/
-│       └── landing.js      # Frontend JavaScript
-|     css/
-        |_ landing.css       # Frontend styling 
-├── uploads/              # Saved PDFs (auto-created)
-└── README.md             # This file
+1. app.py
+2. templates
+   landing.html
+3. static
+   css/
+           landing.css
+           base.css
+   js/
+           landing.js
+
+4. uplaods
+   
+   
 
 # How it works 
 Frontend:
