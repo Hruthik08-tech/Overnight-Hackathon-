@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Example Output</title>
+  
+  <!-- Link to Base Design System -->
+  <link rel="stylesheet" href="{{url_for('static', filename = 'css/base.css')}}">
+  
+  <!-- Link to Example Output Template Styles -->
+  <link rel="stylesheet" href="{{url_for('static', filename = 'css/output.css')}}">
+  
+  <!-- Google Fonts for Educational Typography -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="example-output-container">
+    <!-- Background Animation -->
+    <div class="example-output-background"></div>
+    
+    <!-- Content Wrapper -->
+    <div class="example-output-content">
+      
+      <!-- Header Section -->
+      <div class="eo-header">
+        <h1 class="eo-title">Example Output</h1>
+        <p class="eo-subtitle">Structured view of summary, key decisions, and assigned roles</p>
+      </div>
+
+      <!-- Summary Section -->
+      <section class="eo-section eo-section-summary">
+        <div class="eo-section-header">
+          <h2 class="eo-section-title">Summary</h2>
+          <span class="eo-section-label">Example output</span>
+        </div>
+        <div class="eo-section-body">
+          <p class="eo-example-text">
+            The platform successfully onboarded new students and teachers, collected comprehensive profile information, and assigned strategic roles including Senior Managers and IT professionals to oversee the collaboration ecosystem.
+          </p>
+        </div>
+      </section>
+
+      <!-- Key Decisions Section -->
+      <section class="eo-section eo-section-decisions">
+        <div class="eo-section-header">
+          <h2 class="eo-section-title">Key Decisions</h2>
+          <span class="eo-section-label">Example output</span>
+        </div>
+        <div class="eo-section-body">
+          <ul class="eo-decisions-list">
+            <li class="eo-decision-item">
+              All users must complete mandatory profile details (Full Name, College Email, USN) before accessing platform features.
+            </li>
+            <li class="eo-decision-item">
+              Role selection (Student or Teacher) determines dashboard layout, permissions, and available features for enhanced user experience.
+            </li>
+            <li class="eo-decision-item">
+              Senior Managers and IT Specialists will oversee system administration, user management, and technical operations to ensure platform stability and scalability.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Roles Assigned Section -->
+      <section class="eo-section eo-section-roles">
+        <div class="eo-section-header">
+          <h2 class="eo-section-title">Roles Assigned</h2>
+          <span class="eo-section-label">Example output</span>
+        </div>
+
+        <div class="eo-roles-grid">
+          
+          <!-- Role Card 1: Senior Manager -->
+          <article class="eo-role-card">
+            <div class="eo-role-card-header">
+              <div class="eo-role-avatar">👔</div>
+              <div class="eo-role-title-section">
+                <h3 class="eo-role-name">Priya Sharma</h3>
+                <span class="eo-role-position">Senior Manager</span>
+              </div>
+            </div>
+            
+            <div class="eo-role-card-body">
+              <div class="eo-role-info">
+                <span class="eo-role-label">Email</span>
+                <p class="eo-role-value">priya.sharma@attendee.com</p>
+              </div>
+              <div class="eo-role-info">
+                <span class="eo-role-label">Phone</span>
+                <p class="eo-role-value">+91 98765 12345</p>
+              </div>
+            </div>
+
+            <div class="eo-role-card-footer">
+              <button class="btn btn-primary btn-sm eo-assign-btn" data-name="Priya Sharma" data-role="Senior Manager">
+                Assign
+              </button>
+            </div>
+          </article>
+
+          <!-- Role Card 2: IT Specialist -->
+          <article class="eo-role-card">
+            <div class="eo-role-card-header">
+              <div class="eo-role-avatar">💻</div>
+              <div class="eo-role-title-section">
+                <h3 class="eo-role-name">Arjun Patel</h3>
+                <span class="eo-role-position">IT Specialist</span>
+              </div>
+            </div>
+            
+            <div class="eo-role-card-body">
+              <div class="eo-role-info">
+                <span class="eo-role-label">Email</span>
+                <p class="eo-role-value">arjun.patel@attendee.com</p>
+              </div>
+              <div class="eo-role-info">
+                <span class="eo-role-label">Phone</span>
+                <p class="eo-role-value">+91 91234 56780</p>
+              </div>
+            </div>
+
+            <div class="eo-role-card-footer">
+              <button class="btn btn-primary btn-sm eo-assign-btn" data-name="Arjun Patel" data-role="IT Specialist">
+                Assign
+              </button>
+            </div>
+          </article>
+
+          <!-- Role Card 3: Systems Administrator -->
+          <article class="eo-role-card">
+            <div class="eo-role-card-header">
+              <div class="eo-role-avatar">⚙️</div>
+              <div class="eo-role-title-section">
+                <h3 class="eo-role-name">Sneha Verma</h3>
+                <span class="eo-role-position">Systems Administrator</span>
+              </div>
+            </div>
+            
+            <div class="eo-role-card-body">
+              <div class="eo-role-info">
+                <span class="eo-role-label">Email</span>
+                <p class="eo-role-value">sneha.verma@attendee.com</p>
+              </div>
+              <div class="eo-role-info">
+                <span class="eo-role-label">Phone</span>
+                <p class="eo-role-value">+91 90123 45678</p>
+              </div>
+            </div>
+
+            <div class="eo-role-card-footer">
+              <button class="btn btn-primary btn-sm eo-assign-btn" data-name="Sneha Verma" data-role="Systems Administrator">
+                Assign
+              </button>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- Decorative Elements -->
+      <div class="decoration decoration-1"></div>
+      <div class="decoration decoration-2"></div>
+    </div>
+  </div>
+
+  <script src="{{url_for('static', filename = 'js/output.js')}}"></script>
+</body>
+</html>
